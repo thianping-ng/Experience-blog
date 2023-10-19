@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-section{
+    background: url("https://i.pinimg.com/originals/4e/c2/34/4ec23404f13a0337b97457bbf3662a75.jpg");
+    background-size: cover;
+    width:767px;
+    padding: 20px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    filter: blur(2px);
+    position: relative;
+    text-align: center;
+}
+
+#blog{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 7rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.7);
+    letter-spacing: 4px;
+    position: absolute;
+    top: 9rem;
+    margin-left: 7rem;
+}
+
+
+
