@@ -6,43 +6,87 @@
 }
 
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+background-color:#4d2cb8;
+border-radius: 5px;
+}
+::-webkit-scrollbar-thumb :hover {
+background-color: #555;
 }
 
 .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    overflow: hidden;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
 }
 
 .container img{
     width: 100%;
-    filter: brightness(.4);
+    filter: blur(2px) brightness(.5);
 }
 
 .wrapper{
     position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px;
-    margin-top: 1rem;
 }
 
 #blog{
+    width: 100%;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-bottom: 7rem;
-    text-shadow: 4px 4px 8px black;
-    letter-spacing: 10px;
-    font-size: 2rem;
-    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 4px 4px 8px rgba(0,0,0,.7);
+    font-size: 25px;
+    padding: 20px 50px;
 }
+
+.week-1-wrapper{
+    background-color: #3f2c7d;
+    padding-top: 1rem;
+}
+
+.week-1{
+    background-color: #566275;
+    height: 100vh;
+}
+
+.week-1 h1{
+    background-color: #3f2c7d;
+    font-family:sans-serif;
+    color: white;
+    letter-spacing: 9px;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+
+.week-1 h2{
+    margin-block: 10px;
+    padding-left: 1rem;
+    font-size: 2rem;
+    color:#9f85f2;
+}
+
+.week-1 p{
+    padding-left: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: wheat;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    margin-block:5px;
+}
+
 
 
 
