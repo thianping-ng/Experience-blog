@@ -54,14 +54,15 @@ background-color: #555;
 .week-1-wrapper{
     background-color: #3f2c7d;
     padding-top: 1rem;
+    
 }
 
 .week-1{
     background-color: #566275;
-    height: 100vh;
+    height: 200vh;
 }
 
-.week-1 h1{
+.week-1 #week-1{
     background-color: #3f2c7d;
     font-family:sans-serif;
     color: white;
@@ -85,8 +86,95 @@ background-color: #555;
     font-size: 1.5rem;
     letter-spacing: 4px;
     margin-block:5px;
+    text-transform: uppercase;
+}
+
+.usecase-paragraph p{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color:white;
+    text-wrap: wrap;
+    margin-block: 1rem;
+    padding-right: 1rem;
+}
+
+.usecase-paragraph span{
+    color: red;
+    font-weight: 700;
 }
 
 
+.usecase-model{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    position: relative;
+    background-color: #fcba03;
+    padding: 2rem 10px;
+}
+
+.usecase-model img{
+    width: 50%;
+    height: 100%;
+    border-radius: 5%;
+    box-shadow: 2px 8px 8px rgba(0,0,0,.7);
+    border: 1px solid black;
+}
+
+.basic-requirement-approach{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    background-color: #037bfc;
+    padding: 2rem 20px;
+    padding-left: 2rem;
+}
+
+
+.basic-requirement-appraoch-paragraph ul,li{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    margin-block: 1rem;
+    text-transform:capitalize;
+    font-size: 26px;
+}
+
+li:nth-child(1){
+    text-decoration: underline;
+    list-style: none;
+}
+
+.basic-requirement-approach #list{
+    width: 40%;
+    border-radius: 20%;
+    box-shadow: 2px 8px 8px rgba(0,0,0,.7);
+    border: 1px solid black;
+}
+
+.reader{
+    justify-content: space-between;
+    padding-left: 1rem;
+    display: flex;
+}
+
+.reader #RFID{
+    width: 40%;
+    height: 100%;
+    margin-top: 2rem;
+    border-radius: 20%;
+    box-shadow: 2px 8px 8px rgba(0,0,0,.7);
+    border: 1px solid black;
+}
+
+.reader-description{
+    padding: 20px;
+    padding-top: 3rem;
+    padding-left: 3rem;
+}
+
+.reader-description #reader-title{
+    padding-left: 1rem;
+}
 
 
