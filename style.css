@@ -42,27 +42,77 @@ background-color: #555;
 }
 
 #blog{
-    width: 100%;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 4px;
     text-shadow: 4px 4px 8px rgba(0,0,0,.7);
-    font-size: 25px;
+    font-size: 45px;
     padding: 20px 50px;
 }
 
-.week-1-wrapper{
+.week-1-wrapper h2{
+    padding: 20px;
+    background-color: #3f2c7d;
+    font-size: 2rem;
+    color: white;
+} 
+
+.week-1-container{
+    display: flex;
+}
+
+.scrum-image{
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #566275;
+}
+
+.scrum-image img{
+   aspect-ratio: 16/7;
+    width: 100%;
+   border-radius: 10px;
+}
+
+#week-1{
+    background-color: #fc039d;
+    padding: 20px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.scrum-paragraph{
+    width: 100%;
+    background-color: #566275;
+}
+
+.scrum-paragraph p{
+    padding: 10px;
+    padding-left: 1rem;
+    letter-spacing: 4px;
+    font-size: 39px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #566275;
+    color: white;
+    text-transform: uppercase;
+}
+
+.scrum-paragraph span{
+    color: red;
+}
+
+.week-2-wrapper{
     background-color: #3f2c7d;
     padding-top: 1rem;
     
 }
 
-.week-1{
+.week-2{
     background-color: #566275;
     height: 200vh;
 }
 
-.week-1 #week-1{
+.week-2 #week-2{
     background-color: #3f2c7d;
     font-family:sans-serif;
     color: white;
@@ -72,18 +122,18 @@ background-color: #555;
 }
 
 
-.week-1 h2{
+.week-2 h2{
     margin-block: 10px;
     padding-left: 1rem;
-    font-size: 2rem;
+    font-size: 38px;
     color:#9f85f2;
 }
 
-.week-1 p{
+.week-2 p{
     padding-left: 1rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: wheat;
-    font-size: 1.5rem;
+    font-size: 39px;
     letter-spacing: 4px;
     margin-block:5px;
     text-transform: uppercase;
@@ -96,6 +146,7 @@ background-color: #555;
     text-wrap: wrap;
     margin-block: 1rem;
     padding-right: 1rem;
+    font-size: 39px;
 }
 
 .usecase-paragraph span{
@@ -114,7 +165,7 @@ background-color: #555;
 }
 
 .usecase-model img{
-    width: 50%;
+    width: 20%;
     height: 100%;
     border-radius: 5%;
     box-shadow: 2px 8px 8px rgba(0,0,0,.7);
@@ -123,11 +174,11 @@ background-color: #555;
 
 .basic-requirement-approach{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding-right: 1rem;
     background-color: #037bfc;
     padding: 2rem 20px;
-    padding-left: 2rem;
+    padding-left: 5rem;
 }
 
 
@@ -137,7 +188,7 @@ background-color: #555;
     color: white;
     margin-block: 1rem;
     text-transform:capitalize;
-    font-size: 26px;
+    font-size: 39px;
 }
 
 li:nth-child(1){
@@ -146,26 +197,32 @@ li:nth-child(1){
 }
 
 .basic-requirement-approach #list{
-    width: 40%;
+    width: 20%;
+    height: 100%;
     border-radius: 20%;
     box-shadow: 2px 8px 8px rgba(0,0,0,.7);
     border: 1px solid black;
 }
 
+
 .reader{
-    justify-content: space-between;
-    padding-left: 1rem;
     display: flex;
+    justify-content:space-between;
+    background-color: #566275;
+    padding-left: 1rem;
 }
 
+
+
 .reader #RFID{
-    width: 40%;
+    width: 20%;
     height: 100%;
     margin-top: 2rem;
     border-radius: 20%;
     box-shadow: 2px 8px 8px rgba(0,0,0,.7);
     border: 1px solid black;
 }
+
 
 .reader-description{
     padding: 20px;
