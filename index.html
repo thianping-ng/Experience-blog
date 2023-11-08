@@ -22,7 +22,7 @@
               <p>Scrum is a light-weight framework that help guide people, teams and organization <span>generate value through adaptive solutions for complex problems</span></p>
               <span><img src="/Experience-blog/images/scrum-framework.png" alt=""></span>
               <p>Empirism helps empower teams to innovate adaptable solution and generate value for business</p>
-              <p>Scrum stretches my thinking process outside of what is conventional and restrictive to many possibilities that derive from understanding a users point of view and joint as a team of different diversity from different perspective</p>
+              <p>Scrum stretches my thinking process outside of what is conventional and restrictive, into many possibilities that derive from understanding a users point of view and joint as a team of different diversity from different perspective</p>
             </div>
           </div>
       </div>
@@ -34,27 +34,28 @@
           <div class="header-section">
             <p>is a problem solving approach</p>
             <p>to design from the user's perspective</p>
-            <p>and with this knowledge in mind it will help me ideate and problem solve complex product</p>
+            <p>and with this knowledge in mind it will help me ideate and innovate solution to counter real world product</p>
           </div>
 
           <div class="usecase-model">
             <div class="usecase-paragraph">
               <p>This use case model depict how the actor interact with the card reader <span>for basic requirement</span></p>
               <img src="/Experience-blog/images/data-collection.jpeg" alt="usecase-image" >
-              <p>data is captured via the reader and is encoded and decoded at the Rasbery PI, including a system called speaker will announce to the user for authentication</p>
-              <p>at the same time the data that is encoded will be stored and retrieve by the mssql</p>
+              <div class="usecase-description">
+                <p>data is captured via the reader and is encoded and decoded at the Rasbery PI, including a system called "speaker" will announce to the employee for authentication</p>
+                <p> simultaneously in real time the data that is encoded will be stored and retrieve by the database</p>
+              </div>
             </div>
           </div>
 
           <div class="basic-requirement-approach">
             <div class="basic-requirement-appraoch-paragraph">
               <ul>
-                <li>List</li>
+                <span><img src="/Experience-blog/images/ToDoList.jpeg" alt="list"></span>
                 <li>Long range radio frequecy identification card reader</li>
                 <li>rs232 is a serial port that enables communication between device such as computer and peripheral device (etc. mouse, keyboard)</li>
-                <li>speaker - use for announcing to the user as a public speaker</li>
+                <li>speaker - use for announcing to the employee as a public speaker</li>
               </ul>
-                <span><img src="/Experience-blog/images/ToDoList.jpeg" alt="list"></span>
             </div>
           </div>
 
@@ -64,9 +65,11 @@
               <div class="description">
                 <h1 id="reader-title">long range radio frequency identification card reader</h1>
                 <h2>description</h2>
-                <p>the reader read the user information based on the database, pre-assign unique identification for each employee</p>
-                <p>so when the user interact with the card reader using a card or tag, the gantry will read for authentication</p>
-                <p>following by a speaker will announce a message saying welcome user you may proceed</p>
+                <div class="description-paragraph">
+                  <p>the reader reads the user information based on the existing data that is correlated in the database, pre-assign unique identification for each employee</p>
+                  <p>so when the user interact with the card reader using a card or tag, the gantry will read for authentication</p>
+                  <p>following by a speaker which announce a message saying like, welcome user you may proceed</p>
+                </div>
               </div>
             </div>
           </div>
@@ -82,7 +85,7 @@
           <div class="role-responsibilities">
             <p>the role I have chosen is databse design</p>
             <p>my role and responsbility is that I'm accountable for design the database based on the <span>data collection use case with views</span></p>
-            <p>add views is a virtual table which is defined by the sql statement query and saving it as an object in the database, a view consist of a set of named columns and row of data. a virtual table references from existing data, a view does not exist to stored set of data value in a database</p>
+            <p>Views is a virtual table which is defined by the sql statement and saving it as an object in the database, a view consist of a set of named columns and row of data. a virtual table references from existing data, purpose of a view is not the intention to stored as a permanent set of data value in database</p>
             <h2>why used views in database</h2>
             <ul>
               <li>Security</li>
@@ -96,12 +99,32 @@
               <div class="database-image">
                 <img src="/Experience-blog/images/database-creation.png" alt="">
                 <div class="elaboration-of-database">
-                  <p>In this example showscasing a simple draft to create the employee table with, name, timing of the shift and actual time when the employee clock in and out</p>
-                  <p>and a separate table showcasing a record and shift. Looking at the record table consisting of record ID, employee time, including employee ID and the table shift consist of shift ID, and shift time</p>
-                  <p>In this database is only created for read only permission where users can only access to information relevant to their daily work</p>
+                  <p>In this example showscasing a simple draft to create the employee table consisting of name, timing of the shift and actual time when the employee clock in and out</p>
+                  <p>and a separate table about record and shift. With "record" table consisting of record ID, employee time with employee ID. Lastly, the table "shift" consisting of shift ID, and shift time</p>
+                  <p>This database serve as for read only purpose where users can only access to information relevant to their daily work</p>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="week-4-wrapper">
+        <div class="week-4">
+          <h1 id="week-4">Week 4</h1>
+          <h2>update on database and required transparency</h2>
+          <div class="redo-image">
+            <img src="/Experience-blog/images/redo-database-design.jpeg" alt="">
+            <p>In this week, my team discusss about the redesign of the database as it wasn't design as expected</p>
+            <p>So we need to clarify the tables for employee, shift and record tables</p>
+            <p>In employee's table will have each individual employee assign with an Identification including a shift ID as each employee only have 1 shift assign to them</p>
+            <p>The shift table keeps track of employee clocking in and out and is used to tally with the record table</p>
+            <p>Hence in the record table consist of record ID, employee ID, and the actual time of the clocking in for attendance</p>
+          </div>
+          <h2>Test data using mockaroo by downloading test data generated from mockaroo</h2>
+          <div class="test-site">
+            <img src="/Experience-blog/images/test-data.jpeg" alt="">
+            <p>Mockaroo is a useful web tool for testing purpose with the intention to test various data type in production so with this tool it will benefit me design my database</p>
+            <p>testing realistic data will enable me to discovered errors, bugs in the early phase, in this case testing real data will make my database robust with views as well</p>
           </div>
         </div>
       </div>
