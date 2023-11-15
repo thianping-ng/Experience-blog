@@ -115,6 +115,7 @@ background-color: #555;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 5px;
     letter-spacing: 4px;
+    line-height: 2rem;
 }
 
 .usecase-paragraph span{
@@ -176,7 +177,7 @@ li:nth-child(1){
 
 .reader-description{
     display: flex;
-    column-gap: 6rem;
+    column-gap: 2rem;
     width: 900px;
 }
 
@@ -265,6 +266,7 @@ li:nth-child(1){
     padding: 5px;
     letter-spacing: 4px;
     text-transform: capitalize;
+    line-height: 2rem;
 }
 
 .role-responsibilities li{
@@ -278,7 +280,6 @@ li:nth-child(1){
 
 .database-image{
     width: 100%;
-    display: flex;
     column-gap: 1rem;
 }
 
@@ -295,6 +296,7 @@ li:nth-child(1){
     padding: 5px;
     letter-spacing: 4px;
     white-space: pre-line;
+    line-height: 2rem;
 }
 
 .week-4-wrapper{
@@ -335,6 +337,7 @@ li:nth-child(1){
     padding: 5px;
     letter-spacing: 4px;
     white-space: pre-line;
+        line-height: 2rem;
 }
 
 .redo-image img{
@@ -350,6 +353,8 @@ li:nth-child(1){
     padding: 5px;
     letter-spacing: 4px;
     white-space: pre-line;
+    text-transform: capitalize;
+    line-height: 2rem;
 }
 
 .test-site img{
@@ -358,13 +363,89 @@ li:nth-child(1){
     border-radius: 20px;
 }
 
+.week-5-wrapper{
+    grid-column: 1/10;
+    width: 90%;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.week-5 h2{
+    background-color: #3f2c7d;
+    font-family:var(--font-family);
+    color: white;
+    letter-spacing: 9px;
+    padding: 1rem;
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-block: 10px;
+}
+
+#week-5{
+    background-color: #fc039d;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    font-family: var(--font-family);
+}
+
+.PFD-obj{
+    display: flex;
+    column-gap: 3rem;
+}
+
+.PFD-obj p{
+    font-size: 15px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    letter-spacing: 4px;
+    white-space: pre-line;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
+.PFD-obj img{
+    width: 350px;
+    height: 450px;
+    border-radius: 10%;
+}
+
+.get-and-post{
+    margin-top: 2rem;
+}
+
+.get-and-post p{
+    font-size: 15px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    letter-spacing: 4px;
+    white-space: pre-line;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
+.get-and-post img{
+    width: 600px;
+    height: 450px;
+    border-radius: 10%;
+}
+
 @media (max-width:870px){
     .main{
-        width: 980px;
-        font-size: 30px;
+        max-width: 100%;
+        width:1200px;
+        font-size: 20px;
     }
+
+    .container img{
+        width: 100%;
+    }
+
     p{
-        font-size: 40px;
+        font-size: 20px;
     }
     .usecase-description{
         display: flex;
@@ -382,12 +463,79 @@ li:nth-child(1){
         width: 100%;
         margin: 1rem;
         padding-right: 1rem;
-        display: block;
     }
 
     .database-image{
         display: block;
     }
 
+    .week-1-wrapper{
+        grid-column: 1/9;
+        width: 100%;
+        transform: translateX(20%);
+    }
 
+    .week-2-wrapper{
+        grid-column: 1/9;
+        width: 100%;
+        transform: translateX(20%);
+    }
+
+    .reader-description{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .description{
+        margin-top: 2rem;
+    }
+
+    .week-3-wrapper{
+        grid-column: 1/9;
+        width: 100%;
+        transform: translateX(20%);
+    }
+
+    .role-image img{
+        width: 100%;
+    }
+
+    .database-image img{
+        width: 100%;
+    }
+
+    .week-4-wrapper{
+        grid-column: 1/9;
+        width: 100%;
+        transform: translateX(20%);
+    }
+
+    .redo-image img{
+        width: 100%;
+    }
+
+    .test-site img{
+        width: 100%;
+    }
+
+    .week-5-wrapper{
+        grid-column: 1/9;
+        width: 100%;
+        transform: translateX(20%);
+    }
+    
+    .PFD-obj{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .get-and-post img{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:400px){
+    
 }
