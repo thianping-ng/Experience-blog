@@ -38,6 +38,28 @@ background-color: #555;
     position: relative;
 }
 
+#week-list ul,a{
+    width: 284%;
+    display: flex;
+    column-gap: 2rem;
+    list-style: none;
+    text-decoration: none;
+    background-color: lightblue;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: var(--font-family);
+}
+
+#week-list li,a:nth-child(1){
+    text-decoration: none;
+}
+
+
+
 .container img{
     width: 100%;
     filter: blur(2px) brightness(.5);
@@ -63,6 +85,7 @@ background-color: #555;
     grid-column: 1/13;
     width: 70%;
     padding: 1rem;
+    padding-top: 5rem;
 }
 
 #week-1{
