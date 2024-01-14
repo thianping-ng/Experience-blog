@@ -21,6 +21,7 @@
           <li><a href="#week-3">Week 3</a></li>
           <li><a href="#week-4">Week 4</a></li>
           <li><a href="#week-5">Week 5</a></li>
+          <li><a href="#week-12">Week 12</a></li>
         </ul>
       </div>
       <div class="week-1-wrapper">
@@ -150,11 +151,42 @@
           <div class="get-and-post">
             <p>Once rasberry PI has been establish, the PI will communicate with the cloud where the database is stored and retrieved via GET and POST method. In this simple example, the card tag will pass the info via the reader which act as a POST method through a python ODBC module and the ability to retrieve via GET method</p>
             <img src="/Experience-blog/images/GET&POST.jpeg" alt="">
-            <p>On the second day, we've implemented an AI camera which read user face and giving it an ID, in addition to implementing a speaker module that announce the user name</p>
-            <p>In the final day, after presenting our team project to the sponsor. I learned and understand what are the improvement can be made to the project as a prototype, such as including user experience making the product more toward user-friendly by implementing a website using asp.net with database as backend using PHP to store user info in a remote location rather than local.</p>
+            <p>Our team colloborate on building a prototype for our sponsor AIDC</p>
+            <p>we've implemented a PI with an attachment of RFID reader and a external connection to an AI facial recognition (HuskyLens) which is trained to identify user face and giving it an ID, in addition to implementing a speaker module that announce the user profile, the data is stored and retrieve in the database that is access internally in the PI, finally this proves that the information is successfully recorded into the database</p>
+            <p>In the final day, after presenting our team project to the sponsor. Through the feedback from our sponsor, I learned and understand what are the that improvement can be made to the project as a prototype, such as including user experience and making the product more user-friendly</p>
             <p>As the scope of the project was to create a solution that capture large amount of data in a more efficient and dyanmic approach for the company.</p>
+            <p>Through the experience during the Hackathon week, I realize that it's not just being unable to deliver our product but unorganized in our time management and practices that we need to work on. So i believe this issue must be address and improve on in the near future as it may pose a threat for our final product</p>
           </div>
         </div>
+      </div>
+      <div class="week-12-wrapper">
+          <div class="week-12">
+            <h1 id="week-12">Week 12</h1>
+            <h2>Building a web</h2>
+            <div class="Task">
+              <img src="/Experience-blog/images/week-12 task.jpeg" alt="">
+              <p>Our task for week 12 is to create a website using aso.net with the addition of HTTPS to make it secure from attacks. Improve PHP with JWT with HTTPS, JWT is JSON web token is useful for authenticate user for security purposes, connect to tableau and connect to pi to php</p>
+            </div>
+            <div class="connectionPipeline">
+              <img src="/Experience-blog/images/connectionPipeline.PNG" alt="">
+              <p>In asp.net this method builder.services.AddMysqlDataSource() allow connection to register with database</p>
+            </div>
+            <div class="EmployeeData">
+              <img src="/Experience-blog/images/GetEmployeeDatabase.PNG" alt="">
+              <p>By instantiating EmployeeRecord, is to create a ConfigurationBuilder().SetBasePath() helps to get current directory and adding the AddJsonFile after .SetBasePath, retrieve the mysql database connection through appsettings.json</p>
+              <p>Upon retrieving it, assign the configuration to acces the mysql database to a variable called strConn type string. So that any query that we developer want to query to database we can access to strConn</p>
+              <p>In addition to creating and retrieving the database connection, I've created a GetEmployeeData class List to retrieve a list of employee from the database. The database will read based on ID, fullname, shiftId, RFID ID and face ID and returns a list of result based on that</p>
+            </div>
+            <div class="Search">
+              <img src="/Experience-blog/images/searchEmployee.PNG" alt="">
+              <p>By creating a private instance of EmployeeRecord, is to only retrieve all employee information</p>
+              <p>I've created a search class action result which only return a lit of employee based on specific keywords to the user</p>
+            </div>
+            <div class="connectionString">
+              <img src="/Experience-blog/images/databaseConnectionString.PNG" alt="">
+              <p>This is to establish a connection to mysql at appsettings.json, based on server name, User ID,Password, Database name with port number</p>
+            </div>
+          </div>
       </div>
   </div>
   </body>

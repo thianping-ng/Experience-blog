@@ -456,6 +456,94 @@ li:nth-child(1){
     border-radius: 10%;
 }
 
+.week-12-wrapper{
+    grid-column: 1/10;
+    width: 90%;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+#week-12{
+    background-color: #fc039d;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    font-family: var(--font-family);
+}
+
+.week-12 h2{
+    background-color: #3f2c7d;
+    font-family:var(--font-family);
+    color: white;
+    letter-spacing: 9px;
+    padding: 1rem;
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-block: 10px;
+}
+
+.Task img{
+    width: 350px;
+    height: 450px;
+    border-radius: 10%;
+}
+
+.Task p{
+    font-size: 15px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    letter-spacing: 4px;
+    white-space: pre-line;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
+.connectionPipeline p{
+    font-size: 15px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    letter-spacing: 4px;
+    white-space: pre-line;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
+.EmployeeData p {
+    font-size: 15px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    letter-spacing: 4px;
+    white-space: pre-line;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
+.Search p{
+    font-size: 15px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    letter-spacing: 4px;
+    white-space: pre-line;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
+.connectionString p{
+    font-size: 15px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    letter-spacing: 4px;
+    white-space: pre-line;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
 @media (max-width:870px){
     .main{
         max-width: 100%;
@@ -556,6 +644,8 @@ li:nth-child(1){
     .get-and-post img{
         width: 100%;
     }
+
+
 
 }
 
