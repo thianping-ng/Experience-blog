@@ -22,6 +22,7 @@
           <li><a href="#week-4">Week 4</a></li>
           <li><a href="#week-5">Week 5</a></li>
           <li><a href="#week-12">Week 12</a></li>
+          <li><a href="#week-13">Week 13</a></li>
         </ul>
       </div>
       <div class="week-1-wrapper">
@@ -187,6 +188,32 @@
               <p>This is to establish a connection to mysql at appsettings.json, based on server name, User ID,Password, Database name with port number</p>
             </div>
           </div>
+      </div>
+      <div class="week-13-wrapper">
+        <div class="week-13">
+          <h1 id="week-13">Week 13</h1>
+          <h2>Week 13 Task</h2>
+          <div class="week-13-task">
+            <img src="/Experience-blog/images/week 13.jpg" alt="">
+            <p>So basically for week 13, firstly my group will focus on ensuring asp.net is able to perform CRUD operation, such as Create, Update, Delete and Read. Secondly PHP intergrate with PI, Implement security such as HTTPS and JWT so that the asp.net is not vurnerable to attacks. Lastly ensure communication is establish for PI and tableau, and set those task on cloud.</p>
+          </div>
+          <div class="sql-query-error">
+            <img src="/Experience-blog/images/sql-delete-error.PNG" alt="">
+            <p>Upon performing the sql delete query for the delete functionality on the website, the system received an error during runtime.</p> 
+              
+            <p>The error stated that I've tried to perform a delete operation or update on <span>"employee"</span> table which is the parent table that has a foreign key relationship with another tabled called <span>"record</span> which is the refernce in relationship with employee table, which resulted in a foreign key constraint. Due to existing record in the database</p>
+          </div>
+          <div class="employee-controller">
+            <img src="/Experience-blog/images/delete-from-view.PNG" alt="">
+            <p>So in order for me to write a delete function, I've create a Delete class in the employee controller which takes in ID as a parameter. So Delete class will store a list of employee variable called emp which retrieves from GetEmployeeData in the data access layer, and upon confirmation of deleting a specific record of the employee. The validate anti forgery token ensure that only those specific individual can perform such action like deleting a employee info from the database.</p>
+          </div>
+          <div class="sql-query">
+            <img src="/Experience-blog/images/delete-query.PNG" alt="">
+            <p>So in the data access layer, I've created a class called Delete wich return number of rows that updates or delete records of info from the database.</p>
+            <p>The first <span>"query1"</span> delete a employee info from the <span>"record"</span>table by their employee ID, where the second query <span>"query2"</span> delete a employee info from the employee table based on their employee ID.</p>
+            <p>The reason why I had to write two query, is that due to foreign key constraint in the database where just by deleting a record it may affect the employee table as it has a foreign key <span>"employee ID"</span> with the record table. In addtion, after performing two query transaction variable "rowAffected" return the number of updated or deleted rows.</p>
+          </div>
+        </div>
       </div>
   </div>
   </body>
