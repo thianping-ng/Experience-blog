@@ -24,6 +24,8 @@
           <li><a href="#week-12">Week 12</a></li>
           <li><a href="#week-13">Week 13</a></li>
           <li><a href="#week-14">Week 14</a></li>
+          <li><a href="#week-15">Week 15</a></li>
+          <li><a href="#week-16">Week 16</a></li>
         </ul>
       </div>
       <div class="week-1-wrapper">
@@ -458,28 +460,53 @@
             <span>Tableu through ssh tunnel</span>, this just ensure the data
             visualisation is on securely encrypted site
           </p>
-          <div class="logout">
-            <img src="images/add-logout.PNG" alt="" />
-            <p>
-              added a logout link to the navbar, understanding the MVC principle
-            </p>
-            <p>
-              this will direct the user from the employee controller which
-              handles the response send back to the user when user make a
-              browser request to the logout view
-            </p>
-            <p>
-              asp-action is the name of the controller generated hypertext
-              references will direct user to the logout class
-            </p>
+        </div>
+      </div>
+      <div class="week-15-wrapper">
+        <div class="week-15">
+          <h1 id="week-15">Week 15</h1>
+          <h2>Week 15 Task</h2>
+          <div class="search-result">
+              <img src="images/search-return-result.PNG" alt="">
+              <p>In this <span>Search</span> class action result return a list of search result only if the user type a keyword in the search bar, if so these <span>tempdata</span> stores the <span>showResult</span>by default it will be set to false, This only happens when the user first time visit the website and want to search a employee record in the search bar the search result should be empty.</p>
+              <p>Otherwise, if the entered field in the search bar is empty it will return nothing. The <span>Tempdata</span>is mechanism for storing a small amount of data for this example I have it only store as boolean, so in this case it will transfer from one controller to a view.</p>
           </div>
-          <div class="logout-view">
-            <img src="images/redirect-to-view.PNG" alt="" />
-            <p>
-              So this logout class return in response to the user request and
-              redirect user to the main home login page
-            </p>
+          <div class="function-show-result">
+            <img src="images/show-result.PNG" alt="">
+            <p>In the view where the search result return based on the user input for a specific employee record, in this picture is to only show a partial view based on the search result. So if the tempdata <span>showResult</span> which stores the boolean is set to true, when the search input is not empty it return the employee information based on the employee model.</p>
+            <p>In the following anchor tag it only return the <span>employee ID</span> for either update or delete upon clicking it</p>
           </div>
+        </div>
+      </div>
+      <div class="week-16-wrapper">
+        <div class="week-16">
+          <h1 id="week-16">Week 16</h1>
+          <h2>Week 16 Task</h2>
+          <div class="week-16-task">
+            <img src="images/week-14-task.jpeg" alt="" />
+          </div>
+          <p>
+            So for week 14, on the ASP side we'll add the employee shift, search
+            page.
+          </p>
+          <p>
+            <span>reverse proxy to ASP</span>, in basic description client
+            request will be directed to a private network behind the firewall to
+            the appropriate backend server.
+          </p>
+          <p>
+            <span>SSH tunnel between PI and cloud</span>, to ensure there is no
+            communication leak between PI and cloud.
+          </p>
+          <p>
+            <span>HTTPS/SSL on php</span> , just to make sure the website is
+            secured, json web token is just optional which our team may or may
+            not used.
+          </p>
+          <p>
+            <span>Tableu through ssh tunnel</span>, this just ensure the data
+            visualisation is on securely encrypted site
+          </p>
         </div>
       </div>
     </div>
