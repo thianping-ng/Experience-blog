@@ -444,7 +444,7 @@
           </p>
           <p>
             <span>reverse proxy to ASP</span>, in basic description client
-            request will be directed to a private network behind the firewall to
+            request will be directed to a private network as act as a server to handle user request to
             the appropriate backend server.
           </p>
           <p>
@@ -457,8 +457,7 @@
             not used.
           </p>
           <p>
-            <span>Tableu through ssh tunnel</span>, this just ensure the data
-            visualisation is on securely encrypted site
+            <span>Tableau through ssh tunnel</span>, this just ensure tableau can communicate with asp
           </p>
         </div>
       </div>
@@ -482,31 +481,43 @@
         <div class="week-16">
           <h1 id="week-16">Week 16</h1>
           <h2>Week 16 Task</h2>
-          <div class="week-16-task">
-            <img src="images/week-14-task.jpeg" alt="" />
+          <p>
+            In week 16, our team decided to host a private webserver <span>(https)</span> using NGINX in these webserver it can run asp and php simultaneously, where the webserver act as routing to reverse proxy the user request to backend server.
+          </p>
+          <div class="employee-page">
+            <img src="images/record-search.PNG" alt="">
+            <p>
+              So in our website where we use asp.net mvc to use as a platform for user interaction, we've implemented a functionality that include a <span>add login</span> for specifically admin to register and have login access to the private server. we've implemented a search record which find record based on employee ID or date, which return empolyee shift timing as a result.
+            </p>
           </div>
+         <div class="help-page">
+          <img src="images/help-page.PNG" alt="">
           <p>
-            So for week 14, on the ASP side we'll add the employee shift, search
-            page.
+            In addition to that, in our website we decided to include a help page to help and assist for any enquiries for employee in doubt.
           </p>
-          <p>
-            <span>reverse proxy to ASP</span>, in basic description client
-            request will be directed to a private network behind the firewall to
-            the appropriate backend server.
-          </p>
-          <p>
-            <span>SSH tunnel between PI and cloud</span>, to ensure there is no
-            communication leak between PI and cloud.
-          </p>
-          <p>
-            <span>HTTPS/SSL on php</span> , just to make sure the website is
-            secured, json web token is just optional which our team may or may
-            not used.
-          </p>
-          <p>
-            <span>Tableu through ssh tunnel</span>, this just ensure the data
-            visualisation is on securely encrypted site
-          </p>
+         </div>
+         <div class="shift-page">
+            <img src="images/shift-search.PNG" alt="">
+            <p>shift page to add shift, delete and search shift.</p>
+         </div>
+          <div class="insert-page">
+            <img src="images/employee-page.PNG" alt="">
+            <p>
+              In the web the site include the funtionality for inserting new employee into the database system 
+            </p>
+          </div>
+        </div>
+        <div class="footer-issue">
+          <h2>Trouble Shooting front-end section</h2>
+          <div class="front-end-1">
+              <img src="images/footer-issue.PNG" alt="">
+              <p>In this section for the front-end portion, I had issues with the background color only loads halfway when returning search result</p>
+              <p>Initially it was the footer section issue, so the problem was resolve using <span>height:100vh</span> where the view is vertical height of the viewport and the footer just need to have <span>margin-top:auto;</span> where it will auto align from the page vertical height</p>
+          </div>
+          <div class="front-end-2">
+            <img src="images/footer-issue-2.PNG" alt="">
+            <p>So in this pic, shows the resulting problem that I'm currentlyy facing at the moment in these week, so i'll see how i can rectify the issue as this is happening in the body section</p>
+          </div>
         </div>
       </div>
     </div>
