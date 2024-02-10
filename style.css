@@ -980,6 +980,10 @@ li:nth-child(1){
     line-height: 2rem;
 }
 
+.tech-spec-diagram span{
+    color: red;
+}
+
 .website img{
     border-radius: 10px;
     width: 1200px;
