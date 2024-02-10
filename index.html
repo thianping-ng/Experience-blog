@@ -26,6 +26,7 @@
           <li><a href="#week-14">Week 14</a></li>
           <li><a href="#week-15">Week 15</a></li>
           <li><a href="#week-16">Week 16</a></li>
+          <li><a href="#week-17">Week 17</a></li>
         </ul>
       </div>
       <div class="week-1-wrapper">
@@ -521,6 +522,62 @@
             <p>Turns out that, the issue lies in the other css called "carousel.css" where the body has a padding bottom causing the footer to float upward</p>
           </div>
         </div>
+      </div>
+      <div class="week-17-wrapper">
+          <div class="week-17">
+            <h1 id="week-17">Week 17</h1>
+            <h2>Final week of PFD</h2>
+            <div class="recap-assg1">
+              <img src="images/recap-of-assg1.PNG" alt="">
+              <p>So for this final week of PFD, just a short recap of the component of the prototype product during assignment 1</p>
+              <p>1. We used SQlite to store data from the rasberry pi which is a specific component part of the gantry for user data management</p>
+              <p>2. We used python console app as our terminal to interact with the system, mostly the prototype operationally ready</p>
+              <p>3. website was not incorporated in our product during assignment 1, so there was not user experience for platform to deploy</p>
+              <p>4. ganrty (hardware) was not linked to MSSQL database, so mostly the gantry which detect with the HuskyLens for facial recognition and RFID reader to scan and detect key card simultaneously,which identify the user was mostly on the rasberry pi which the pi is running the python language module</p>
+            </div>
+            <div class="changes-from-assg1">
+              <img src="images/changes-from-PFD-assignment_1.PNG" alt="">
+              <p>this picture is just to illustrate what are the key changes for our assignment 2</p>
+              <p>1. the python console app that we used to program and code and interact through a console based app, having it change to asp.net mvc as a platform for user experience and a website</p>
+              <p>So why we used asp.net mvc is that it's easier to manage complex and dynamic solution of an application by model, view and controller allowing full control over the behaviour of an system</p>
+              <p>2. SQLite was a temporary solution to storing data from the rasberry pi, so we improvise it to fully integrate with mysql so that with it can be used with asp.net as a web server</p>
+              <p>3. added tableau dashboard to illustrate for data visualisation, with it relevant data at hand it can be used for tracking employee performance</p>
+              <p>4. added a PHP API server to interface with pi to send and retrieve data from the gantry which is running the rasberry pi (python module)</p>
+            </div>
+            <div class="in-out-list">
+              <img src="images/in-out-list.PNG" alt="">
+              <p>for our assignment 2 my team decided to include this component for our product.</p>
+              <p>facial recognition for face detection, speaker module to announce username and other particulars about user, asp.net MVC for deployment of website and user experience to allow easier data management for employee attendance tracking or collection of data to interact with, NGINX is a web server (reverse-proxy) handles user request to specific back-end services essential these request are being load-balanced to handle traffic during demand and also to enable communication between server and gantry, lastly tableau for data visulisation to allow understanding of relevant data for the organisation to translate raw data into meaningful data.</p>
+              <p>Hence, what is not included are retina scanning, fingerprint scanner, and palm scanner. why because our product is to automate data collection and does not require physical interaction from user</p>
+            </div>
+            <div class="gantry">
+              <img src="images/gantry-hardware.PNG" alt="">
+              <p>this picture show the hardware that one of my team mates worked on, so on this rasberry pi it contain the speaker module, RFID reader (long range), potentiometer essentially is to control the speaker volume including the facial recognition not shown in this picture but in the next one, so all of these is what makes up the simulated gantry</p>
+            </div>
+            <div class="gantry-camera">
+              <img src="images/camera-ai.PNG" alt="">
+              <p>this is the HuskyLens AI facial recognition in one of the pi component, it's quick to trained and intelligent, it finds the user picture profile that is stored in the database with the unique id assigned to it</p>
+            </div>
+            <div class="tech-spec">
+              <img src="images/tech-spec.PNG" alt="">
+              <p>In this technical specification, of our product gantry and the website asp.net</p>
+              <p>MYSql is used as a database to stored and retrieve data from database from the asp.net mvc and is also used by rasberry pi the gantry to communicate</p>
+              <p>PHP which is in the server side, PHP API server in terms of application programming interface CRUD operation used for retrieve and write to database</p>
+              <p>NGINX is a web server middleware to route traffic from both endpoint which are the gantry and server allowing communication to take place </p>
+              <p>Linux as the operation system for rasberry pi which also used python as the programming language for gantry software</p>
+              <p>Tableau a software for data visualisation to interpret and understand relevant data</p>
+              <p>Lastly asp.net mvc, a programming language using c# and a platform for web application in other words user experience to interact with</p>
+            </div>
+            <div class="tech-spec-diagram">
+              <img src="images/tech-spec-diagram.PNG" alt="">
+              <p>In this techical specification diagram, the basic flow of how this product works is that from the gantry rasberry pi which consist of the gantry component sends request to the router which act as a middleware to traffic those request to the internet and request are handled at the NGINX web server (reverse-proxy) and request is send to the appropriate back-end services such as PHP API server or asp.net mvc to perform CRUD operation into MYSql database. In addition, <span>ubuntu server</span> is a version of ubuntu operating system is lightweight and efficient runs fast, able to run apps quicker it act as a backbone for the server</p>
+              <p>aside from the normal traffic, a secure channel which reside in the secure route to send request over the network. So in normal operation tableau send request through SSH traffic towards the router and the router route the request securely to the internet and from there routed to the SSH at the server side to enable communication with MySql database</p>
+            </div>
+            <div class="website">
+              <img src="images/website-assg1.PNG" alt="">
+              <p>So this is the website my team used for CRUD operation, in this website is used for registering employee, assigning shift to employee and adding employee record into the system. if there is any query in doubt, there is a help / contact us page to input issues regarding the product</p>
+            </div>
+          </div>
       </div>
     </div>
   </body>

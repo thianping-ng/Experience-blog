@@ -849,6 +849,154 @@ li:nth-child(1){
     line-height: 2rem;
 }
 
+.week-17-wrapper{
+    grid-column: 1/10;
+    width: 90%;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+#week-17{
+    background-color: #fc039d;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    font-family: var(--font-family);
+}
+
+.week-17 h2{
+    background-color: #3f2c7d;
+    font-family:var(--font-family);
+    color: white;
+    letter-spacing: 9px;
+    padding: 1rem;
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-block: 10px;
+}
+
+.recap-assg1 img{
+   border-radius: 10px; 
+}
+
+.recap-assg1 p{
+    font-size: 15px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    letter-spacing: 4px;
+    white-space: pre-line;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
+.changes-from-assg1 img{
+    border-radius: 10px;
+}
+
+.changes-from-assg1 p{
+    font-size: 15px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    letter-spacing: 4px;
+    white-space: pre-line;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
+.in-out-list img{
+    border-radius: 10px;
+}
+
+.in-out-list p{
+    font-size: 15px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    letter-spacing: 4px;
+    white-space: pre-line;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+.gantry img{
+    border-radius: 10px;
+}
+
+.gantry p{
+    font-size: 15px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    letter-spacing: 4px;
+    white-space: pre-line;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
+.gantry-camera img{
+    border-radius: 10px;
+}
+
+.gantry-camera p{
+    font-size: 15px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    letter-spacing: 4px;
+    white-space: pre-line;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
+.tech-spec img{
+    border-radius: 10px;
+}
+
+.tech-spec p{
+    font-size: 15px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    letter-spacing: 4px;
+    white-space: pre-line;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
+.tech-spec-diagram img{
+    border-radius: 10px;
+}
+
+.tech-spec-diagram p{
+    font-size: 15px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    letter-spacing: 4px;
+    white-space: pre-line;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
+.website img{
+    border-radius: 10px;
+    width: 1200px;
+    height: auto;
+}
+
+.website p{
+    font-size: 15px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    letter-spacing: 4px;
+    white-space: pre-line;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
 
 @media (max-width:870px){
     .main{
